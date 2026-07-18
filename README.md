@@ -7,6 +7,9 @@ Predictive Maintenance microservice for estimating Remaining Useful Life (RUL) o
 - **Routing Layer:** FastAPI
 - **Validation:** Pydantic
 
+Architecture Overview
+This repository implements a predictive digital twin for lithium-ion battery arrays. It processes sequential charge/discharge telemetry (voltage, current, temperature) through a 1D Convolutional Neural Network designed for time-series feature extraction. The model is wrapped in an asynchronous FastAPI routing layer with strict Pydantic payload validation, ensuring fault tolerance and memory-safe tensor inference for edge-deployment environments.
+
 ## Quickstart
 
     python -m venv venv
